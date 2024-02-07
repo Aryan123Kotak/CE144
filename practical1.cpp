@@ -1,4 +1,3 @@
-// This Program is created by Kotak_Aryan_23CE059
 //This Program is created for calculating  C.G.P.A of 3 subjects
 #include<iostream>
 #include<string.h>
@@ -10,7 +9,8 @@ int main()
     int Semester,Theory_Marks[3],Practical_Marks[3];
     string Sub_Name[3],Theory_Grade[3],Practical_Grade[3];
     int a,Theory_Grade_Number[3],Practical_Grade_Number[3],Total_Grade=0;
-    float CGPA;
+    int credit=4;
+    float SGPA;
     cout<<"Enter student_id:";
     cin>>Student_Id;
     fflush(stdin);
@@ -122,7 +122,7 @@ int main()
         }
         Total_Grade += 4*Practical_Grade_Number[a];
     }
-    CGPA = Total_Grade/24;
+    SGPA = Total_Grade/24.00;
 
     cout<<"************************************************************************************"<<endl;
     cout<<"Student_Id"<<setw(12)<<":"<<setw(5)<<" "<<setw(-10)<<Student_Id<<endl;
@@ -135,7 +135,7 @@ int main()
         cout<<Sub_Name[i]<<setw(32-Sub_Name[i].length())<<" "<<Theory_Grade_Number[i]<<setw(16)<<Practical_Grade_Number[i]<<endl;
     }
     cout<<"************************************************************************************"<<endl;
-    cout<<"C.G.P.A"<<setw(14)<<":"<<setw(5)<<CGPA;
+    cout<<"S.G.P.A"<<setw(14)<<":"<<setw(5)<<fixed<<setprecision(2)<<SGPA;
 
 return 0;
 }
