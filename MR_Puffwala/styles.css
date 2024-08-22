@@ -1,0 +1,52 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+  }
+  
+  header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .order-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu-item {
+    margin: 20px 0;
+  }
+  
+  button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ff3f34;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .order-summary {
+    padding: 20px;
+    text-align: center;
+  }
